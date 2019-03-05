@@ -29,7 +29,7 @@
                                         <div class="view">
                                             {{ $question->views  . " " .  str_plural('view', $question->views) }}
                                         </div>
-                                    </div>
+                                </div>
                             <div class="media-body">
                                 <div class="d-flex align-items-center ">
                                         <h3 class="mt-0"><a href="{{ $question->url }}">{{ $question->title }}</a></h3>
