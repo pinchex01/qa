@@ -42,4 +42,13 @@ class User extends Authenticatable
     {
         return $this->hasMany(Answer::class); 
     }
+
+    public function getAvatarAttribute()
+    {
+        $email = "someone@somewhere.com";
+        $size = 40;
+        return  "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?s=" . $size;
+
+    }
+    
 }
